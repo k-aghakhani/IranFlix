@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        listView = findViewById(R.id.listView);
+        listView = findViewById(R.id.listViewCategories);
         ArrayList list = new ArrayList();
         for ( int i = 0; i < fruitImageIds.length; i++) {
 
