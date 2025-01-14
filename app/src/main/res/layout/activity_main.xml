@@ -34,24 +34,38 @@
                         <HorizontalScrollView
                             android:id="@+id/viewSlider"
                             android:layout_width="match_parent"
-                            android:layout_marginBottom="16dp"
-                            android:layout_height="200dp">
-                                <ImageView
-                                    android:src="@drawable/banana"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"/>
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="16dp">
 
-                                <ImageView
-                                    android:src="@drawable/mango"
+                                <!-- LinearLayout برای قرار دادن چندین ImageView -->
+                                <LinearLayout
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"/>
-                                <ImageView
-                                    android:src="@drawable/watermelon"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"/>
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
 
+                                        <ImageView
+                                            android:src="@drawable/banana"
+                                            android:layout_width="200dp"
+                                            android:layout_height="200dp"
+                                            android:scaleType="centerCrop"
+                                            android:adjustViewBounds="true"/>
+
+                                        <ImageView
+                                            android:src="@drawable/mango"
+                                            android:layout_width="200dp"
+                                            android:layout_height="200dp"
+                                            android:scaleType="centerCrop"
+                                            android:adjustViewBounds="true"/>
+
+                                        <ImageView
+                                            android:src="@drawable/watermelon"
+                                            android:layout_width="200dp"
+                                            android:layout_height="200dp"
+                                            android:scaleType="centerCrop"
+                                            android:adjustViewBounds="true"/>
+
+                                </LinearLayout>
                         </HorizontalScrollView>
-
 
                         <!-- عنوان دسته‌بندی‌ها -->
                         <TextView
@@ -66,10 +80,10 @@
                         <ListView
                             android:id="@+id/listViewCategories"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
                             android:layout_marginBottom="16dp"
                             android:divider="#000000"
-                            android:layout_weight="1"
                             android:dividerHeight="1dp"
                             android:listSelector="#C2ECFF" />
 
@@ -86,9 +100,9 @@
                         <ListView
                             android:id="@+id/listViewMovies"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:divider="#000000"
+                            android:layout_height="0dp"
                             android:layout_weight="1"
+                            android:divider="#000000"
                             android:dividerHeight="1dp"
                             android:listSelector="#C2ECFF" />
 
