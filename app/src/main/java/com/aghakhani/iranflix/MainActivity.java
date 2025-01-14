@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.mango,
             R.drawable.orange,
             R.drawable.watermelon};
-    ListView listView ;
+    ListView listViewCategories,listViewMovies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,23 +37,40 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        listView = findViewById(R.id.listViewCategories);
-        ArrayList list = new ArrayList();
+        listViewCategories = findViewById(R.id.listViewCategories);
+        ArrayList listCategories = new ArrayList();
         for ( int i = 0; i < fruitImageIds.length; i++) {
 
             HashMap<String, Object> map = new HashMap<>();
             map.put("fruitName", fruitNames[i]);
             map.put("fruitImage", fruitImageIds[i]);
             map.put("fruitMessage", fruitMessage[i]);
-            list.add(map);
+            listCategories.add(map);
+        }
+        String[] fromCategories = {"fruitName","fruitMessage", "fruitImage"};
+        int toCategories[] = {R.id.textViewTitle,R.id.textViewMessage, R.id.imageView};
+
+        SimpleAdapter simpleAdapterCategories = new SimpleAdapter(this, listCategories, R.layout.listview_items,fromCategories,toCategories);
+        listViewCategories.setAdapter(simpleAdapterCategories);
+
+
+
+        listViewMovies = findViewById(R.id.listViewMovies);
+
+        ArrayList listMovies = new ArrayList();
+        for ( int i = 0; i < fruitImageIds.length; i++) {
+
+            HashMap<String, Object> map = new HashMap<>();
+            map.put("fruitName", fruitNames[i]);
+            map.put("fruitImage", fruitImageIds[i]);
+            map.put("fruitMessage", fruitMessage[i]);
+            listMovies.add(map);
         }
         String[] from = {"fruitName","fruitMessage", "fruitImage"};
         int to[] = {R.id.textViewTitle,R.id.textViewMessage, R.id.imageView};
 
-        SimpleAdapter simpleAdapter = new SimpleAdapter(this, list, R.layout.listview_items,from,to);
-        listView.setAdapter(simpleAdapter);
-
-
+        SimpleAdapter simpleAdapterMovies = new SimpleAdapter(this, listMovies, R.layout.listview_items,from,to);
+        listViewMovies.setAdapter(simpleAdapterMovies);
 
 
     }
