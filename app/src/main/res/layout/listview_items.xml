@@ -1,46 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
 
-    <!--Creating a ImageView-->
+    <!--Creating a ImageView (now on the right side)-->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_launcher_background" />
 
-    <!--Creating a Title-->
+    <!--Creating a Title (now on the left side of image)-->
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/imageView"
         android:gravity="center"
         android:padding="5dp"
-        android:text="Title"
+        android:text="عنوان"
         android:textColor="#808080"
         android:textSize="40sp"
         android:textStyle="bold|italic" />
 
-    <!--Creating a Message-->
+    <!--Creating a Message (now on the left side of image)-->
     <TextView
         android:id="@+id/textViewMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:layout_marginRight="20dp"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/imageView"
         android:gravity="center"
         android:padding="5dp"
-        android:text="Title"
+        android:text="پیام"
         android:textColor="#808080"
         android:textSize="20sp"
         android:textStyle="bold|italic" />
-
 
 </RelativeLayout>
