@@ -76,30 +76,13 @@
                         <ListView
                             android:id="@+id/listViewCategories"
                             android:layout_width="match_parent"
-                            android:layout_height="250dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:layout_marginBottom="16dp"
                             android:divider="#000000"
                             android:dividerHeight="1dp"
                             android:listSelector="#C2ECFF" />
 
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Popular Movies"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            android:layout_marginBottom="8dp" />
-
-                        <ListView
-                            android:id="@+id/listViewMovies"
-                            android:layout_width="match_parent"
-                            android:layout_height="250dp"
-                            android:layout_weight="1"
-                            android:divider="#000000"
-                            android:dividerHeight="1dp"
-                            android:listSelector="#C2ECFF" />
 
                 </LinearLayout>
         </ScrollView>

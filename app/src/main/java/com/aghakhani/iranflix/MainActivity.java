@@ -55,23 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        listViewMovies = findViewById(R.id.listViewMovies);
 
-        ArrayList listMovies = new ArrayList();
-        for ( int i = 0; i < fruitImageIds.length; i++) {
-
-            HashMap<String, Object> map = new HashMap<>();
-            map.put("fruitName", fruitNames[i]);
-            map.put("fruitImage", fruitImageIds[i]);
-            map.put("fruitMessage", fruitMessage[i]);
-            listMovies.add(map);
-        }
-        String[] from = {"fruitName","fruitMessage", "fruitImage"};
-        int to[] = {R.id.textViewTitle,R.id.textViewMessage, R.id.imageView};
-
-        SimpleAdapter simpleAdapterMovies = new SimpleAdapter(this, listMovies, R.layout.listview_items,from,to);
-        listViewMovies.setAdapter(simpleAdapterMovies);
-
-
-    }
+         }
 }
