@@ -38,22 +38,22 @@
 
                                         <ImageView
                                             android:src="@drawable/banana"
-                                            android:layout_width="200dp"
-                                            android:layout_height="200dp"
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
                                             android:scaleType="centerCrop"
                                             android:adjustViewBounds="true"/>
 
                                         <ImageView
                                             android:src="@drawable/mango"
-                                            android:layout_width="200dp"
-                                            android:layout_height="200dp"
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
                                             android:scaleType="centerCrop"
                                             android:adjustViewBounds="true"/>
 
                                         <ImageView
                                             android:src="@drawable/watermelon"
-                                            android:layout_width="200dp"
-                                            android:layout_height="200dp"
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
                                             android:scaleType="centerCrop"
                                             android:adjustViewBounds="true"/>
 
