@@ -80,7 +80,7 @@
                             android:layout_marginBottom="16dp"
                             android:divider="#000000"
                             android:dividerHeight="1dp"
-                            android:listSelector="#C2ECFF" />
+                            android:listSelector="#D4BEFA" />
 
 
                 </LinearLayout>
